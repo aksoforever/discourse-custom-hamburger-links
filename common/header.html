@@ -1,5 +1,5 @@
 <script type="text/discourse-plugin" version="0.8.18">
-  (settings.Hamburger_links || "").split("|").forEach(link => {
+  (I18n.t(themePrefix("hamburger-links-translate")) || "").split("|").forEach(link => {
     let [rawLabel, href, loc] = (link || "").split(",");
     let className = `custom-hamburger-link ${rawLabel.replace(/\s+/g, "-").toLowerCase()}`;
 
